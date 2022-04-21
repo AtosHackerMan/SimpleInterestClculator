@@ -10,12 +10,11 @@ var years = document.getElementById("years").value
 var interest = principal * years * rate /100
 var year = new Date().getFullYear()+parseInt(years)
 var result = document.getElementById("result")
-    var pfocus = document.getElementById("principal")
     p = document.getElementById("principal").value;
 
     if(principal <= 0) {
         alert("Enter a positive number")
-        focus(pfocus)
+        document.getElementById("principal").focus()
         return false
     }
     
